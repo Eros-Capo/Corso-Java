@@ -1,0 +1,17 @@
+package principale;
+
+public class Dato {
+	
+	//DICHIARAZIONE VARIABILI
+	
+	int numeroIntero = 1; //NUMERO INTERO PRIVO DI VIRGOLA compreso tra - 2,147,483,648 (-2^31) e 2,147,483,647 (2^31 -1)
+	byte numeroMoltoPiccolo = 120; //NUMERO COMPRESO TRA -128 E 127 INCLUSI  
+	long numeroGrande = 100000000000L; // NUMERO COMPRESO TRA  -9,223,372,036,854,775,808(-2^63) e 9,223,372,036,854,775,807(2^63 -1)
+									   // RICHIEDE ALLA FINE DEL NUMERO DI INSERIRE LA LETTERA L
+	short numeroPiccolo = 10000;    //NUMERO PICCOLO COMPRESO TRA -32,768 E 32,767
+	boolean valoreBooleano = true;  //PUO ASSUMERE SOLO I VALORI TRUE E FALSE
+	float singolaPrecisione = 1.2f; // DATO A SINGOLA PRECISIONE SEGUITO DA f
+	double doppiaPrecisione = 1.23234; // DATO A DOPPIA PRECISIONE PERMETTE RAPPRESENTAZIONI DI NUMERI IN MODO PIU ACCURATO
+	char carattereSingolo = 'A';  //SINGOLO CARATTERE
+	
+}
