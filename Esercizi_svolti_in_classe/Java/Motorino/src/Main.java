@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/*Proviamo ora a scrivere un menu per il nostro programma,
+*il menu dovrà salutare l'utente  e richiedere di inserire il valore
+*0 per aggiungere un'auto oppure qualsiasi altro valore per inserire un motorino
+*/
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -56,7 +61,7 @@ public class Main {
 			// Construiamo l'oggetto con i valori inseriti dall'utente nelle variabili dichiarate in precedenza
 			Automobile autoUno = new Automobile(colore, velocita, marca, antifurto, pneumatici, velocitaMax, nomeProprietario, targa);
 			autoUno.stampaAutomobile();
-		}else {
+		} else {
 			
 		}
 	
