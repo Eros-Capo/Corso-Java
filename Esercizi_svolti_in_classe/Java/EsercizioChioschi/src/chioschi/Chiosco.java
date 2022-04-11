@@ -20,6 +20,7 @@ public class Chiosco {
 	public void registraCliente(Cliente c) {
 		c.setIdCliente(clienti.size());
 		clienti.add(c);
+		System.out.println("Il cliente è stato registrato!");
 	}
 	
 	public void cancellaDebito(Cliente c) {
@@ -33,6 +34,7 @@ public class Chiosco {
 	public void eliminaCliente(Cliente c) {
 		if(clienti.contains(c)) {
 			clienti.remove(c);
+			System.out.println("Il cliente è stato eliminato!");
 		} else {
 			System.out.println("Cliente non presente");
 		}

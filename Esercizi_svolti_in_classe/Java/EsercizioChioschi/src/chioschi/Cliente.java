@@ -26,9 +26,15 @@ public class Cliente {
 	
 	public void resetDebito() {
 		debitoTotale = 0;
+		System.out.println("Il debito ora è pari a: "+ debitoTotale);
 	}
 	
 	public void aumentaDebito(double ammontare) {
 		debitoTotale += ammontare;
+		System.out.println("Il debito ora è pari a: "+ debitoTotale);
+	}
+	
+	public String getNome() {
+		return nome;
 	}
 }

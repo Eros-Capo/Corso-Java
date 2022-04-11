@@ -18,19 +18,21 @@ public class ChioscoBibite extends Chiosco{
 	
 	public void inizioHappyHour() {
 		happyHour = true;
-		costoBibita+=1.00;
+		costoBibita-=1.00;
 	}
 	
 	public void termineHappyHour() {
 		happyHour = false;
-		costoBibita-=1.00;
+		costoBibita+=1.00;
 	}
 	
-	public void vendiBibita(Cliente c) {
-		if(super.clienti.contains(c) && nBibiteDisponibili>0) {
-			c.aumentaDebito(costoBibita);
-			nBibiteDisponibili--;
-		}else if(super.clienti.contains(c) && nBibiteDisponibili<=0){
+	public void vendiBibita(int nBibite, Cliente c) {
+		if(super.clienti.contains(c) && nBibiteDisponibili>nBibite) {
+			c.aumentaDebito(costoBibita*nBibite);
+			nBibiteDisponibili-=nBibite;
+			System.out.println("Abbiamo venduto "+ nBibite +"al cliente: "+ c.getNome() + " !");
+			System.out.println("Ci rimangono "+ nBibiteDisponibili);
+		}else if(super.clienti.contains(c) && nBibiteDisponibili<=nBibite){
 			System.out.println("Bibite terminate!!");
 		}else {
 			System.out.println("Cliente non presente nel database!");
